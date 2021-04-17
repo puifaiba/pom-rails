@@ -9,4 +9,5 @@ class User < ApplicationRecord
     enum role: [:patient, :therapist, :admin]
 
     has_many :messages
+    has_many :tasks
 end
