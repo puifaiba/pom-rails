@@ -1,10 +1,14 @@
 class TasksController < ApplicationController
-  before_action :set_task, only: %i[ edit update destroy ]
+  before_action :set_task, only: [:show, :edit, :update, :destroy]
 
-  # GET /tasks or /tasks.json
+  # GET /tasks or /tasks.json 
   def index
     tasks = Task.all
     render json: tasks, include: [:user, :column], except: [:user_id, :column_id]
+  end
+
+  def show
+    render json: @task, include: [:user, :column], except: [:user_id, :column_id]
   end
 
   # GET /tasks/new
@@ -43,14 +47,14 @@ class TasksController < ApplicationController
 
   # DELETE /tasks/1 or /tasks/1.json
   def destroy
-    task.destroy
-    render json: {}, head: :no_content
+    @task.destroy
+    head :no_content, status: :ok
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_task
-      task = Task.find_by(id: params[:id])
+      @task = Task.find_by(id: params[:id])
     end
 
     # Only allow a list of trusted parameters through.

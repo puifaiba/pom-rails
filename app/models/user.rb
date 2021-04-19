@@ -8,6 +8,12 @@ class User < ApplicationRecord
 
     enum role: [:patient, :therapist, :admin]
 
-    has_many :messages
+    has_many :messages, dependent: :destroy
     has_many :tasks
+
+    after_initialize do
+        if self.new_record?
+            self.role ||= :patient
+        end
+    end
 end

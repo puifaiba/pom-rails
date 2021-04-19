@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :tasks, except: [:show]
+  resources :tasks
   get 'columns/index'
   resources :users, only: [:create, :show, :index]
   resources :chats, only: [:index, :create]
