@@ -25,9 +25,9 @@ class TasksController < ApplicationController
     task = Task.new(task_params)
 
     if task.save
-      render json: card, include: [:user, :column], except: [:user_id, :column_id], status: :created, location: card
+      render json: task, include: [:user, :column], except: [:user_id, :column_id], status: :created, location: card
     else
-      render json: card.errors, status: :unprocessable_entity
+      render json: task.errors, status: :unprocessable_entity
     end
     
   end
