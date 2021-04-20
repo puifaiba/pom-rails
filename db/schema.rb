@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2021_04_16_202223) do
   create_table "tasks", force: :cascade do |t|
     t.string "title"
     t.datetime "date"
-    t.string "tag"
+    t.string "tag", null: true
     t.bigint "column_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

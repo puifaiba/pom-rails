@@ -25,7 +25,7 @@ class TasksController < ApplicationController
     task = Task.new(task_params)
 
     if task.save
-      render json: task, include: [:user, :column], except: [:user_id, :column_id], status: :created, location: card
+      render json: task, include: [:user, :column], except: [:user_id, :column_id], status: :created, location: task
     else
       render json: task.errors, status: :unprocessable_entity
     end
@@ -36,10 +36,8 @@ class TasksController < ApplicationController
   def update
     respond_to do |format|
       if @task.update(task_params)
-        format.html { redirect_to @task, notice: "Task was successfully updated." }
         format.json { render :show, status: :ok, location: @task }
       else
-        format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @task.errors, status: :unprocessable_entity }
       end
     end
