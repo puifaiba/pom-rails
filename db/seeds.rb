@@ -41,21 +41,21 @@ end
 tasks = [
   {
     title: "Add discount code to checkout page",
-    date: "2020-12-14",
+    date: "2021-05-12",
     tag: "Feature Request",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
   {
     title: "Provide documentation on integrations",
-    date: "2021-01-12",
+    date: "2021-06-01",
     tag: "Backend",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
   {
     title: "Design shopping cart dropdown",
-    date: "2021-01-09",
+    date: "2021-06-09",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
@@ -69,61 +69,61 @@ tasks = [
   },
   {
     title: "Design wishlist overview",
-    date: "2021-01-09",
+    date: "2021-05-09",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
   {
     title: "Add paypal as a payment provider",
-    date: "2021-01-14",
+    date: "2021-04-30",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
   {
     title: "Update documentation on products endpoint",
-    date: "2021-01-19",
+    date: "2021-06-19",
     tag: "Backend",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
     title: "Design products carousel",
-    date: "2021-01-10",
+    date: "2021-06-10",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
     title: "Add related products section",
-    date: "2021-01-14",
+    date: "2021-06-14",
     tag: "Feature Request",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
     title: "Design wishlist dropdown",
-    date: "2021-01-09",
+    date: "2021-06-09",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
     title: "Add new properties to products endpoint",
-    date: "2021-01-14",
+    date: "2021-06-14",
     tag: "Backend",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
     title: "Prepare product meeting",
-    date: "2021-01-14",
+    date: "2021-07-14",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
     title: "Design discount code for checkout page",
-    date: "2021-01-12",
+    date: "2021-08-12",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
