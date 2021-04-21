@@ -4,10 +4,10 @@ Message.destroy_all
 Column.destroy_all
 Task.destroy_all
 
-user1 = User.create!(email: "polly@test.com", password: "password1", first_name: "Polly", last_name: "Wolly", role: 1)
-user2 = User.create!(email: "choppo@test.com", password: "password2", first_name: "Choppo", last_name: "Whoppo", role: 1)
-user3 = User.create!(email: "ravi@test.com", password: "password3", first_name: "Ravi", last_name: "Wavi", role: 0, therapist_id: user1.id)
-user4 = User.create!(email: "pepe@test.com", password: "password4", first_name: "Pepe", last_name: "Wepe", role: 0, therapist_id: user2.id)
+user1 = User.create!(email: "polly@test.com", password: "pollyrules", first_name: "Polly", last_name: "Wolly", role: 1)
+user2 = User.create!(email: "choppo@test.com", password: "chopporules", first_name: "Choppo", last_name: "Whoppo", role: 1)
+user3 = User.create!(email: "ravi@test.com", password: "ravirules", first_name: "Ravi", last_name: "Wavi", role: 0, therapist_id: user1.id)
+user4 = User.create!(email: "pepe@test.com", password: "peperules", first_name: "Pepe", last_name: "Wepe", role: 0, therapist_id: user2.id)
 
 chat1 = Chat.create!(name: "Ravi")
 chat2 = Chat.create!(name: "Pepe")
