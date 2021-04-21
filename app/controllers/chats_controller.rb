@@ -7,7 +7,7 @@ class ChatsController < ApplicationController
     def create
         chat = Chat.new(chat_params)
         if chat.save
-            serialized_data = ActiveModelSerializer::Adapter::Json.new(
+            serialized_data = ActiveModelSerializers::Adapter::Json.new(
                 ChatSerializer.new(chat)
             ).serializable_hash
             ActionCable.server.broadcast 'chats_channel', serialized_data
