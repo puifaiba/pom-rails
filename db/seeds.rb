@@ -77,6 +77,7 @@ tasks = [
   {
     title: "Add paypal as a payment provider",
     date: "2021-04-30",
+    tag: "Feature Request",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
