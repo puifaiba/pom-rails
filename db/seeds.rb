@@ -65,68 +65,68 @@ tasks = [
     date: "2021-09-15",
     tag: "QA",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user2.id
+    user_id: user1.id
   },
   {
     title: "Design wishlist overview",
     date: "2021-01-09",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user2.id
+    user_id: user1.id
   },
   {
     title: "Add paypal as a payment provider",
     date: "2021-01-14",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user2.id
+    user_id: user1.id
   },
   {
     title: "Update documentation on products endpoint",
     date: "2021-01-19",
     tag: "Backend",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user3.id
+    user_id: user2.id
   },
   {
     title: "Design products carousel",
     date: "2021-01-10",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user3.id
+    user_id: user2.id
   },
   {
     title: "Add related products section",
     date: "2021-01-14",
     tag: "Feature Request",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user3.id
+    user_id: user2.id
   },
   {
     title: "Design wishlist dropdown",
     date: "2021-01-09",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user3.id
+    user_id: user2.id
   },
   {
     title: "Add new properties to products endpoint",
     date: "2021-01-14",
     tag: "Backend",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user4.id
+    user_id: user2.id
   },
   {
     title: "Prepare product meeting",
     date: "2021-01-14",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user4.id
+    user_id: user2.id
   },
   {
     title: "Design discount code for checkout page",
     date: "2021-01-12",
     tag: "Design",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user4.id
+    user_id: user2.id
   }
 ]
 
