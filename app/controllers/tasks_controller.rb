@@ -34,12 +34,10 @@ class TasksController < ApplicationController
 
   # PATCH/PUT /tasks/1 or /tasks/1.json
   def update
-    respond_to do |format|
-      if @task.update(task_params)
-        format.json { render :show, status: :ok, location: @task }
-      else
-        format.json { render json: @task.errors, status: :unprocessable_entity }
-      end
+    if @task.update(task_params)
+      render json: @task, status: :ok, location: @task, include: [:user, :column], except: [:user_id, :column_id]
+    else
+      render json: @task.errors, status: :unprocessable_entity
     end
   end
 
