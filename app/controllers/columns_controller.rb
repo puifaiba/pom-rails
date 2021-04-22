@@ -29,6 +29,6 @@ class ColumnsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def column_params
-    params.require(:column).permit(:label, :value)
+    params.require(:column).permit(:label, :value, :id, :created_at, :updated_at)
   end
 end
