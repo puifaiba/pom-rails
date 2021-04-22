@@ -9,11 +9,43 @@ user2 = User.create!(email: "choppo@test.com", password: "chopporules", first_na
 user3 = User.create!(email: "ravi@test.com", password: "ravirules", first_name: "Ravi", last_name: "Wavi", role: 0, therapist_id: user1.id)
 user4 = User.create!(email: "pepe@test.com", password: "peperules", first_name: "Pepe", last_name: "Wepe", role: 0, therapist_id: user2.id)
 
-chat1 = Chat.create!(name: "Ravi")
-chat2 = Chat.create!(name: "Pepe")
+chat1 = Chat.create!(name: "Art")
+chat2 = Chat.create!(name: "Science")
+chat3 = Chat.create!(name: "Reading")
+chat4 = Chat.create!(name: "Math")
 
-message1 = Message.create!(chat_id: chat1.id, user_id: user3.id, content: "Hey, how did it go?")
-message2 = Message.create!(chat_id: chat1.id, user_id: user1.id, content: "Not terrible")
+messages = [
+  {
+    chat_id: chat1.id,
+    user_id: user1.id,
+    content: "Hello everyone! Please remember your collage project is due by the end of this week."
+  },
+  {
+    chat_id: chat2.id,
+    user_id: user2.id,
+    content: "Upcoming field trip to the Natural History Museum. Please be sure to bring:
+    1: A warm coat, 2: Pack you lunch"
+  },
+  {
+    chat_id: chat3.id,
+    user_id: user3.id,
+    content: "Everyone should finish reading Chapter 3 of Charlotte's Web by next Wednesday. Be sure to let me know where you are by the end of the day today."
+  },
+  {
+    chat_id: chat4.id,
+    user_id: user4.id,
+    content: "Multiplication Table assignment will be handed out today. "
+  },
+  {
+    chat_id: chat1.id,
+    user_id: user2.id,
+    content: "If anyone needs supplies, I have extra!"
+  }
+]
+
+messages.each do |message|
+    Message.create!(chat_id: message[:chat_id], user_id: message[:user_id], content: message[:content])
+end
 
 columns = [
     {
