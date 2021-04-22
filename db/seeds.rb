@@ -18,17 +18,17 @@ messages = [
   {
     chat_id: chat1.id,
     user_id: user1.id,
-    content: "Hello everyone! Please remember your collage project is due by the end of this week."
+    content: "Hello everyone! It's Mr. Bob Ross. Just a gentle reminder that your finger painting project is due by the end of this week :)"
   },
   {
     chat_id: chat2.id,
     user_id: user2.id,
-    content: "Upcoming field trip to the Natural History Museum. Please be sure to bring:
-    1: A warm coat, 2: Pack you lunch"
+    content: "Get ready for your coming field trip to the Natural History Museum! Please be sure to bring:
+    1: A warm coat, 2: Your lunch. And remember seatbelts, everyone! -Ms. Frizzle"
   },
   {
     chat_id: chat3.id,
-    user_id: user3.id,
+    user_id: user2.id,
     content: "Everyone should finish reading Chapter 3 of Charlotte's Web by next Wednesday. Be sure to let me know where you are by the end of the day today."
   },
   {
@@ -38,8 +38,8 @@ messages = [
   },
   {
     chat_id: chat1.id,
-    user_id: user2.id,
-    content: "If anyone needs supplies, I have extra!"
+    user_id: user1.id,
+    content: "If anyone needs more supplies, I have extra!"
   }
 ]
 
