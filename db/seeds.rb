@@ -40,93 +40,93 @@ end
 
 tasks = [
   {
-    title: "Add discount code to checkout page",
+    title: "Make paper towel roll kaleidoscope",
     date: "2021-05-12",
-    tag: "Feature Request",
+    tag: "Science",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
   {
-    title: "Provide documentation on integrations",
+    title: "Solar System Project",
     date: "2021-06-01",
-    tag: "Backend",
+    tag: "Science",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
   {
-    title: "Design shopping cart dropdown",
-    date: "2021-06-09",
-    tag: "Design",
-    column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user1.id
-  },
-  {
-    title: "Test checkout flow",
-    date: "2021-09-15",
-    tag: "QA",
-    column_id: Column.find_by(value: columns.sample[:value])[:id],
-    user_id: user1.id
-  },
-  {
-    title: "Design wishlist overview",
+    title: "Make phonics flip card",
     date: "2021-05-09",
-    tag: "Design",
+    tag: "Reading",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
   {
-    title: "Add paypal as a payment provider",
+    title: "Read poetry",
+    date: "2021-06-15",
+    tag: "English",
+    column_id: Column.find_by(value: columns.sample[:value])[:id],
+    user_id: user1.id
+  },
+  {
+    title: "Make homemade ruler",
+    date: "2021-05-09",
+    tag: "Math",
+    column_id: Column.find_by(value: columns.sample[:value])[:id],
+    user_id: user1.id
+  },
+  {
+    title: "Multiplication table quiz",
     date: "2021-04-30",
-    tag: "Feature Request",
+    tag: "Math",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user1.id
   },
   {
-    title: "Update documentation on products endpoint",
+    title: "Sudoku Challenge",
     date: "2021-06-19",
-    tag: "Backend",
+    tag: "Math",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
-    title: "Design products carousel",
-    date: "2021-06-10",
-    tag: "Design",
+    title: "Practice clarinet",
+    date: "2021-04-27",
+    tag: "Music",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
-    title: "Add related products section",
+    title: "Collect 5 different types of leaves",
     date: "2021-06-14",
-    tag: "Feature Request",
+    tag: "Science",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
-    title: "Design wishlist dropdown",
-    date: "2021-06-09",
-    tag: "Design",
+    title: "Make lunch bag kite",
+    date: "2021-05-17",
+    tag: "Art",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
-    title: "Add new properties to products endpoint",
-    date: "2021-06-14",
-    tag: "Backend",
+    title: "Make home map",
+    date: "2021-05-20",
+    tag: "Geography",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
-    title: "Prepare product meeting",
-    date: "2021-07-14",
-    tag: "Workflow",
+    title: "Memorial Day - Word Jumble assignment",
+    date: "2021-05-30",
+    tag: "English",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },
   {
-    title: "Design discount code for checkout page",
-    date: "2021-08-12",
-    tag: "Design",
+    title: "Read Chapter 3 of Charlotte's Web",
+    date: "2021-05-05",
+    tag: "Reading",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   }
