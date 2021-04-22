@@ -119,6 +119,7 @@ tasks = [
   {
     title: "Prepare product meeting",
     date: "2021-07-14",
+    tag: "Workflow",
     column_id: Column.find_by(value: columns.sample[:value])[:id],
     user_id: user2.id
   },

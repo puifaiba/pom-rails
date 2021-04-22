@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/logged_in', to: 'sessions#is_logged_in?'
 
   get '/columns', to: 'columns#index'
+  resources :columns, except: [:create, :destroy]
 
   mount ActionCable.server => '/cable'
 end
